@@ -7,12 +7,12 @@ public class CreateParkingLotDTO {
     private final String name;
     private final int maxCapacity;
     private final double hourlyPrice;
-    private final Category category;
+    private final CreateCategoryDTO category;
     private final CreateAddressDTO address;
     private final CreateEmployeeDTO employee;
     private final CreateDivisionDTO division;
 
-    private CreateParkingLotDTO(String name, int maxCapacity, double hourlyPrice, Category category, CreateAddressDTO address, CreateEmployeeDTO employee, CreateDivisionDTO division) {
+    private CreateParkingLotDTO(String name, int maxCapacity, double hourlyPrice, CreateCategoryDTO category, CreateAddressDTO address, CreateEmployeeDTO employee, CreateDivisionDTO division) {
         this.name = name;
         this.maxCapacity = maxCapacity;
         this.hourlyPrice = hourlyPrice;
@@ -34,7 +34,7 @@ public class CreateParkingLotDTO {
         return hourlyPrice;
     }
 
-    public Category getCategory() {
+    public CreateCategoryDTO getCategory() {
         return category;
     }
 
@@ -55,7 +55,7 @@ public class CreateParkingLotDTO {
         private String name;
         private int maxCapacity;
         private double hourlyPrice;
-        private Category category;
+        private CreateCategoryDTO category;
         private CreateAddressDTO address;
         private CreateEmployeeDTO employee;
         private CreateDivisionDTO division;
@@ -82,7 +82,7 @@ public class CreateParkingLotDTO {
             return this;
         }
 
-        public CreateParkingLotDTOBuilder withCategory(Category category) {
+        public CreateParkingLotDTOBuilder withCategory(CreateCategoryDTO category) {
             this.category = category;
             return this;
         }

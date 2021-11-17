@@ -12,6 +12,7 @@ public class ParkingLotMapper {
     private final AddressMapper addressMapper;
     private final EmployeeMapper employeeMapper;
     private final DivisionMapper divisionMapper;
+    private final CategoryMapper categoryMapper;
 
     @Autowired
     public ParkingLotMapper(AddressMapper addressMapper, EmployeeMapper employeeMapper, DivisionMapper divisionMapper, CategoryMapper categoryMapper) {
@@ -27,7 +28,7 @@ public class ParkingLotMapper {
                 .withName(createParkingLotDTO.getName())
                 .withMaxCapacity(createParkingLotDTO.getMaxCapacity())
                 .withHourlyPrice(createParkingLotDTO.getHourlyPrice())
-                .withCategory(createParkingLotDTO.getCategory())
+                .withCategory(categoryMapper.toEntity(createParkingLotDTO.getCategory()))
                 .withParkingLotAddress(addressMapper.toAddress(createParkingLotDTO.getAddress()))
                 .withEmployee(employeeMapper.toEntity(createParkingLotDTO.getEmployee()))
                 .withDivision(divisionMapper.toEntityDivision(createParkingLotDTO.getDivision()))
