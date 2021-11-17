@@ -9,7 +9,10 @@ public class ParkingLotMapper {
 
     public ParkingLot mapCreateParkingLotDTOToParkingLot(CreateParkingLotDTO createParkingLotDTO) {
 
-        return new ParkingLot(createParkingLotDTO.getName(),createParkingLotDTO.getMaxCapacity(),
-                createParkingLotDTO.getHourlyPrice(), createParkingLotDTO.getCategory(), createParkingLotDTO.getAddress());
+        return ParkingLot.ParkingLotBuilder.aParkingLot()
+                .withName(createParkingLotDTO.getName())
+                .withMaxCapacity(createParkingLotDTO.getMaxCapacity())
+                .withHourlyPrice(createParkingLotDTO.getHourlyPrice())
+                .with;
     }
 }
