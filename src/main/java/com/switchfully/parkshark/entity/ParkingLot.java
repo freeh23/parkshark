@@ -7,7 +7,10 @@ import javax.persistence.*;
 @Entity
 @Table(name = "ParkingLot")
 public class ParkingLot {
+
     @Id
+//    @SequenceGenerator(name = "persons_person_id_seq", sequenceName = "PERSONS_PERSON_id_SEQ", allocationSize = 1)
+//    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "persons_person_id_seq")
     @Column(name = "pl_id")
     private int parkingLotId;
 
