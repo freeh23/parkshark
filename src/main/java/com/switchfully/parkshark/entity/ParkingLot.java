@@ -38,4 +38,12 @@ public class ParkingLot {
 
     public ParkingLot() {
     }
+
+    public ParkingLot(String name, int maxCapacity, double hourlyPrice, Category category, Address address) {
+        this.name = name;
+        this.maxCapacity = maxCapacity;
+        this.hourlyPrice = hourlyPrice;
+        this.category = category;
+        this.address = address;
+    }
 }
