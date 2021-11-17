@@ -1,6 +1,6 @@
 package com.switchfully.parkshark.dto;
 
-public class createLicensePlateDTO {
+public class CreateLicensePlateDTO {
     private String licensePlateNumber;
     private String licensePlateCountry;
 

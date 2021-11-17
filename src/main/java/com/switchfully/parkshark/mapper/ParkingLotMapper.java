@@ -29,7 +29,7 @@ public class ParkingLotMapper {
                 .withMaxCapacity(createParkingLotDTO.getMaxCapacity())
                 .withHourlyPrice(createParkingLotDTO.getHourlyPrice())
                 .withCategory(categoryMapper.toEntity(createParkingLotDTO.getCategory()))
-                .withParkingLotAddress(addressMapper.toAddress(createParkingLotDTO.getAddress()))
+                .withParkingLotAddress(addressMapper.toEntity(createParkingLotDTO.getAddress()))
                 .withEmployee(employeeMapper.toEntity(createParkingLotDTO.getEmployee()))
                 .withDivision(divisionMapper.toEntityDivision(createParkingLotDTO.getDivision()))
                 .build();
