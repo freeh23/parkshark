@@ -33,7 +33,7 @@ public class MemberController {
     @ResponseStatus(HttpStatus.OK)
     public List<MemberDTO> getAllMembers(){
         logger.info("Get all members called");
-        return MemberService.getAllMembers();
+        return memberService.getAllMembers();
     }
 
     @GetMapping(produces = "application/json", params = {"memberId"})
