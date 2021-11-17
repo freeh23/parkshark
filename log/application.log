@@ -21,3 +21,26 @@
 2021-11-16 15:21:08.817  INFO 24556 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2021-11-16 15:21:08.821  INFO 24556 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2021-11-16 15:21:08.833  INFO 24556 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-11-16 15:23:53.762  INFO 8344 --- [main] c.s.parkshark.ParksharkApplication       : Starting ParksharkApplication using Java 16.0.2 on DESKTOP-PTJP4L2 with PID 8344 (C:\Users\Andreeas Firoiu\Desktop\Park Shark\target\classes started by Andreeas Firoiu in C:\Users\Andreeas Firoiu\Desktop\Park Shark)
+2021-11-16 15:23:53.765  INFO 8344 --- [main] c.s.parkshark.ParksharkApplication       : No active profile set, falling back to default profiles: default
+2021-11-16 15:23:54.501  INFO 8344 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-16 15:23:54.514  INFO 8344 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 JPA repository interfaces.
+2021-11-16 15:23:54.906  INFO 8344 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-11-16 15:23:54.913  INFO 8344 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-11-16 15:23:54.913  INFO 8344 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-11-16 15:23:55.006  INFO 8344 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-11-16 15:23:55.007  INFO 8344 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1166 ms
+2021-11-16 15:23:55.134  INFO 8344 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-11-16 15:23:55.927  INFO 8344 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-11-16 15:23:55.969  INFO 8344 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-11-16 15:23:56.003  INFO 8344 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-11-16 15:23:56.101  INFO 8344 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-11-16 15:23:56.222  INFO 8344 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-11-16 15:23:56.683  INFO 8344 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-11-16 15:23:56.695  INFO 8344 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-16 15:23:56.791  WARN 8344 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-16 15:23:57.550  INFO 8344 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-16 15:23:57.564  INFO 8344 --- [main] c.s.parkshark.ParksharkApplication       : Started ParksharkApplication in 4.329 seconds (JVM running for 5.304)
+2021-11-16 15:24:13.339  INFO 8344 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-16 15:24:13.350  INFO 8344 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-11-16 15:24:13.359  INFO 8344 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
