@@ -22,9 +22,9 @@ public class ParkingLotService {
     }
 
 
-    public ParkingLot createParkingLot(CreateParkingLotDTO createParkingLotDTO) {
-        ParkingLot parkingLot = parkingLotMapper.mapCreateParkingLotDTOToParkingLot(createParkingLotDTO);
+    public void createParkingLot(CreateParkingLotDTO createParkingLotDTO) {
+        //ParkingLot parkingLot = parkingLotMapper.mapCreateParkingLotDTOToParkingLot(createParkingLotDTO);
 
-        return parkingLotRepository.save(parkingLot);
+        //return parkingLotRepository.save(parkingLot);
     }
 }

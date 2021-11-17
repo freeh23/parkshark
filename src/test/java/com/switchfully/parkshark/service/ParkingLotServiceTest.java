@@ -23,7 +23,7 @@ class ParkingLotServiceTest {
 
 
     }
-
+/*
     @Test
     void whenCreateParkingLot_thenParkingLotRepositorySaveMethodShouldBeCalled() {
         CreateParkingLotDTO createParkingLotDTO = CreateParkingLotDTO.CreateParkingLotDTOBuilder.aCreateParkingLotDTO()
@@ -57,7 +57,7 @@ class ParkingLotServiceTest {
         //ParkingLot expectedParkingLot = new ParkingLot(
 
 
-    }
+    }*/
 
     @Test
     void whenCreatingParkingLot_ThrowUnauthorizedMemberExceptionIfMemberIsNotManager() {
