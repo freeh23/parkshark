@@ -570,3 +570,49 @@ Caused by: java.lang.IllegalStateException: Method public abstract com.switchful
 2021-11-17 11:57:01.564  INFO 10352 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2021-11-17 11:57:01.569  INFO 10352 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2021-11-17 11:57:01.576  INFO 10352 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-11-17 13:52:53.590  INFO 1008 --- [main] c.s.parkshark.ParksharkApplication       : Starting ParksharkApplication using Java 16.0.2 on DESKTOP-L2S2J13 with PID 1008 (C:\Users\colruyt\Documents\Switchfully\javacodelabs\parkshark\target\classes started by colruyt in C:\Users\colruyt\Documents\Switchfully\javacodelabs\parkshark)
+2021-11-17 13:52:53.593  INFO 1008 --- [main] c.s.parkshark.ParksharkApplication       : No active profile set, falling back to default profiles: default
+2021-11-17 13:52:54.531  INFO 1008 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-17 13:52:54.617  INFO 1008 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 76 ms. Found 3 JPA repository interfaces.
+2021-11-17 13:52:55.148  INFO 1008 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-11-17 13:52:55.158  INFO 1008 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-11-17 13:52:55.159  INFO 1008 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-11-17 13:52:55.318  INFO 1008 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-11-17 13:52:55.319  INFO 1008 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1675 ms
+2021-11-17 13:52:55.502  INFO 1008 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-11-17 13:52:56.176  INFO 1008 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-11-17 13:52:56.233  INFO 1008 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-11-17 13:52:56.300  INFO 1008 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-11-17 13:52:56.469  INFO 1008 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-11-17 13:52:56.611  INFO 1008 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-11-17 13:52:57.569  INFO 1008 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-11-17 13:52:57.582  INFO 1008 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-17 13:52:58.063  WARN 1008 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-17 13:52:58.870  INFO 1008 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-17 13:52:58.882  INFO 1008 --- [main] c.s.parkshark.ParksharkApplication       : Started ParksharkApplication in 5.809 seconds (JVM running for 6.733)
+2021-11-17 13:53:08.425  INFO 1008 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-17 13:53:08.431  INFO 1008 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-11-17 13:53:08.452  INFO 1008 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-11-17 13:54:36.332  INFO 19276 --- [main] c.s.parkshark.ParksharkApplication       : Starting ParksharkApplication using Java 16.0.2 on DESKTOP-L2S2J13 with PID 19276 (C:\Users\colruyt\Documents\Switchfully\javacodelabs\parkshark\target\classes started by colruyt in C:\Users\colruyt\Documents\Switchfully\javacodelabs\parkshark)
+2021-11-17 13:54:36.336  INFO 19276 --- [main] c.s.parkshark.ParksharkApplication       : No active profile set, falling back to default profiles: default
+2021-11-17 13:54:37.127  INFO 19276 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-17 13:54:37.215  INFO 19276 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 78 ms. Found 3 JPA repository interfaces.
+2021-11-17 13:54:37.659  INFO 19276 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-11-17 13:54:37.669  INFO 19276 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-11-17 13:54:37.670  INFO 19276 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-11-17 13:54:37.797  INFO 19276 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-11-17 13:54:37.797  INFO 19276 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1405 ms
+2021-11-17 13:54:37.941  INFO 19276 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-11-17 13:54:38.480  INFO 19276 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-11-17 13:54:38.534  INFO 19276 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-11-17 13:54:38.583  INFO 19276 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-11-17 13:54:38.714  INFO 19276 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-11-17 13:54:38.822  INFO 19276 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-11-17 13:54:39.636  INFO 19276 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-11-17 13:54:39.646  INFO 19276 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-17 13:54:40.092  WARN 19276 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-17 13:54:40.777  INFO 19276 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-17 13:54:40.788  INFO 19276 --- [main] c.s.parkshark.ParksharkApplication       : Started ParksharkApplication in 4.846 seconds (JVM running for 5.544)
+2021-11-17 13:54:45.189  INFO 19276 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-17 13:54:45.192  INFO 19276 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-11-17 13:54:45.199  INFO 19276 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
