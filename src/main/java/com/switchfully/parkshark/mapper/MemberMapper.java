@@ -17,14 +17,14 @@ public class MemberMapper {
         this.licensePlateMapper = licensePlateMapper;
     }
 
-    public Member toMember(CreateMemberDTO dto) {
+    public Member toEntity(CreateMemberDTO dto) {
         if (dto.getMembershipLevel() == null) {
             return new Member.Builder()
                     .withFirstName(dto.getFirstName())
                     .withLastName(dto.getLastName())
-                    .withAddress(addressMapper.toAddress(dto.getAddress()))
+                    .withAddress(addressMapper.toEntity(dto.getAddress()))
                     .withEmail(dto.getEmail())
-                    .withLicensePlate(licensePlateMapper.toLicensePlate(dto.getLicensePlateDTO()))
+                    .withLicensePlate(licensePlateMapper.toEntity(dto.getLicensePlateDTO()))
                     .withTelephoneNumber(dto.getTelephoneNumber())
                     .withMembershipLevel(Member.MembershipLevel.BRONZE)
                     .build();
@@ -32,9 +32,9 @@ public class MemberMapper {
         return new Member.Builder()
                 .withFirstName(dto.getFirstName())
                 .withLastName(dto.getLastName())
-                .withAddress(addressMapper.toAddress(dto.getAddress()))
+                .withAddress(addressMapper.toEntity(dto.getAddress()))
                 .withEmail(dto.getEmail())
-                .withLicensePlate(licensePlateMapper.toLicensePlate(dto.getLicensePlateDTO()))
+                .withLicensePlate(licensePlateMapper.toEntity(dto.getLicensePlateDTO()))
                 .withTelephoneNumber(dto.getTelephoneNumber())
                 .withMembershipLevel(dto.getMembershipLevel())
                 .build();
