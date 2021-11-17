@@ -5,9 +5,14 @@ import javax.validation.constraints.Email;
 import java.time.LocalDate;
 import java.util.Objects;
 
+//Address en licenseplate entity nog nodig.
+
 @Entity
 @Table(name = "member")
 public class Member {
+
+    public enum MembershipLevel {BRONZE,SILVER,GOLD}
+
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     @Column(name = "mem_id", nullable = false)
@@ -35,7 +40,8 @@ public class Member {
     private LicensePlate licensePlate;
 
     @JoinColumn(name = "mem_lp_id")
-    private String membershipLevel;
+    @Enumerated(EnumType.STRING)
+    private MembershipLevel membershipLevel;
 
 
     @Override
