@@ -1,6 +1,7 @@
 package com.switchfully.parkshark.entity;
 
 import javax.persistence.*;
+import java.util.Objects;
 
 @Entity
 @Table(name = "Division")
@@ -54,6 +55,30 @@ public class Division {
 
     public Division getUpperDivision() {
         return upperDivision;
+    }
+
+    @Override
+    public String toString() {
+        return "Division{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", originalName='" + originalName + '\'' +
+                ", director=" + director +
+                ", upperDivision=" + upperDivision +
+                '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Division division = (Division) o;
+        return id == division.id && Objects.equals(name, division.name) && Objects.equals(originalName, division.originalName) && Objects.equals(director, division.director) && Objects.equals(upperDivision, division.upperDivision);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, name, originalName, director, upperDivision);
     }
 
     public static class DivisionBuilder{
