@@ -25,7 +25,10 @@ public class DivisionService {
         this.divisionMapper = divisionMapper;
     }
 
-    public DivisionDTO save(CreateDivisionDTO createDivisionDTO){
+    public DivisionDTO save(CreateDivisionDTO createDivisionDTO) {
+        if(createDivisionDTO == null){
+            throw new InvalidInputException();
+        }
         Division division = divisionMapper.toEntityDivision(createDivisionDTO);
         divisionRepository.save(division);
         return divisionMapper.toDtoDivision(division);
