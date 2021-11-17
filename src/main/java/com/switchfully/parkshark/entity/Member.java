@@ -32,6 +32,9 @@ public class Member {
     @Email
     private String email;
 
+    @Column (name = "mem_telephone_number")
+    private String telephoneNumber;
+
     @Column(name = "mem_reg_date",columnDefinition = "DATE")
     private LocalDate registrationDate;
 
