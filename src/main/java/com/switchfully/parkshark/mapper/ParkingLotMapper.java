@@ -14,13 +14,14 @@ public class ParkingLotMapper {
     private final DivisionMapper divisionMapper;
 
     @Autowired
-    public ParkingLotMapper(AddressMapper addressMapper, EmployeeMapper employeeMapper, DivisionMapper divisionMapper) {
+    public ParkingLotMapper(AddressMapper addressMapper, EmployeeMapper employeeMapper, DivisionMapper divisionMapper, CategoryMapper categoryMapper) {
         this.addressMapper = addressMapper;
         this.employeeMapper = employeeMapper;
         this.divisionMapper = divisionMapper;
+        this.categoryMapper = categoryMapper;
     }
 
-   public ParkingLot toEntity(CreateParkingLotDTO createParkingLotDTO) {
+    public ParkingLot toEntity(CreateParkingLotDTO createParkingLotDTO) {
 
         return ParkingLot.ParkingLotBuilder.aParkingLot()
                 .withName(createParkingLotDTO.getName())
@@ -33,7 +34,7 @@ public class ParkingLotMapper {
                 .build();
     }
 
-    public ParkingLotDTO toDTO(ParkingLot parkingLot){
+    public ParkingLotDTO toDTO(ParkingLot parkingLot) {
         return ParkingLotDTO.ParkingLotDTOBuilder.aParkingLotDTO()
                 .withName(parkingLot.getName())
                 .withMaxCapacity(parkingLot.getMaxCapacity())

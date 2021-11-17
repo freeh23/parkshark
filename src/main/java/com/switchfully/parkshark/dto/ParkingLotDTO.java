@@ -5,8 +5,6 @@ import com.switchfully.parkshark.entity.Category;
 import com.switchfully.parkshark.entity.Division;
 import com.switchfully.parkshark.entity.Employee;
 
-import javax.persistence.*;
-
 public class ParkingLotDTO {
 
     private int parkingLotId;

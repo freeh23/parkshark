@@ -2,12 +2,15 @@ package com.switchfully.parkshark.service;
 
 import com.switchfully.parkshark.dto.CreateParkingLotDTO;
 import com.switchfully.parkshark.dto.ParkingLotDTO;
+import com.switchfully.parkshark.entity.Category;
 import com.switchfully.parkshark.entity.ParkingLot;
 import com.switchfully.parkshark.mapper.ParkingLotMapper;
 import com.switchfully.parkshark.repository.ParkingLotRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+
+import java.util.Optional;
 
 @Service
 @Transactional
@@ -17,8 +20,9 @@ public class ParkingLotService {
     private final ParkingLotMapper parkingLotMapper;
 
     @Autowired
-    public ParkingLotService(ParkingLotRepository parkingLotRepository, ParkingLotMapper parkingLotMapper) {
+    public ParkingLotService(ParkingLotRepository parkingLotRepository, CategoryRepository categoryRepository, ParkingLotMapper parkingLotMapper) {
         this.parkingLotRepository = parkingLotRepository;
+        this.categoryRepository = categoryRepository;
         this.parkingLotMapper = parkingLotMapper;
     }
 

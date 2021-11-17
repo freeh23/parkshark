@@ -1,9 +1,5 @@
 package com.switchfully.parkshark.dto;
 
-import com.switchfully.parkshark.entity.Address;
-import com.switchfully.parkshark.entity.Category;
-import com.switchfully.parkshark.entity.Division;
-import com.switchfully.parkshark.entity.Employee;
 
 public class CreateParkingLotDTO {
 
