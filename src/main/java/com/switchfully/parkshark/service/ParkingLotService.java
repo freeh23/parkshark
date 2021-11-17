@@ -1,6 +1,7 @@
 package com.switchfully.parkshark.service;
 
 import com.switchfully.parkshark.dto.CreateParkingLotDTO;
+import com.switchfully.parkshark.dto.ParkingLotDTO;
 import com.switchfully.parkshark.entity.ParkingLot;
 import com.switchfully.parkshark.mapper.ParkingLotMapper;
 import com.switchfully.parkshark.repository.ParkingLotRepository;
@@ -22,9 +23,9 @@ public class ParkingLotService {
     }
 
 
-    public void createParkingLot(CreateParkingLotDTO createParkingLotDTO) {
-        //ParkingLot parkingLot = parkingLotMapper.mapCreateParkingLotDTOToParkingLot(createParkingLotDTO);
-
-        //return parkingLotRepository.save(parkingLot);
+    public ParkingLotDTO createParkingLot(CreateParkingLotDTO createParkingLotDTO) {
+        ParkingLot parkingLot = parkingLotMapper.toEntity(createParkingLotDTO);
+        ParkingLot savedParkingLot = parkingLotRepository.save(parkingLot);
+        return parkingLotMapper.toDTO(savedParkingLot);
     }
 }

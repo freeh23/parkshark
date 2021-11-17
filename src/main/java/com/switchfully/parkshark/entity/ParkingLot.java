@@ -108,5 +108,31 @@ public class ParkingLot {
         }
     }
 
+    public String getName() {
+        return name;
+    }
 
+    public int getMaxCapacity() {
+        return maxCapacity;
+    }
+
+    public double getHourlyPrice() {
+        return hourlyPrice;
+    }
+
+    public Category getCategory() {
+        return category;
+    }
+
+    public Address getParkingLotAddress() {
+        return parkingLotAddress;
+    }
+
+    public Employee getEmployee() {
+        return employee;
+    }
+
+    public Division getDivision() {
+        return division;
+    }
 }
