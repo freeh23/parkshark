@@ -15,7 +15,8 @@ public class Member {
     public enum MembershipLevel {BRONZE, SILVER, GOLD}
 
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @SequenceGenerator(name = "Member_mem_id_seq", sequenceName = "Member_mem_id_seq", initialValue = 1, allocationSize = 1)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "Member_mem_id_seq")
     @Column(name = "mem_id", nullable = false)
     private Integer memberId;
 
