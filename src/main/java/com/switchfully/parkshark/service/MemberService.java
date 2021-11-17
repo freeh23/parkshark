@@ -25,6 +25,8 @@ public class MemberService {
     public MemberDTO createMember(CreateMemberDTO dto) {
         assertCorrectCreateMemberDTO(dto);
         var newMember = mapper.toMember(dto);
+        repository.saveMember(newMember);
+        return mapper.toDTO(newMember);
     }
 
 
@@ -47,4 +49,6 @@ public class MemberService {
         if (!check)
             throw new BadCreateMemberException();
     }
+
+
 }

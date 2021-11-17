@@ -17,14 +17,26 @@ public class MemberMapper {
     }
 
     public Member toMember(CreateMemberDTO dto) {
-        if dto.get
-
+        if (dto.getMembershipLevel() == null) {
+            return new Member.Builder()
+                    .withFirstName(dto.getFirstName())
+                    .withLastName(dto.getLastName())
+                    .withAddress(addressMapper.toAddress(dto.getAddress()))
+                    .withEmail(dto.getEmail())
+                    .withLicensePlate(licensePlateMapper.toLicensePlate(dto.getLicensePlateDTO()))
+                    .withTelephoneNumber(dto.getTelephoneNumber())
+                    .withMembershipLevel(Member.MembershipLevel.BRONZE)
+                    .build();
+        }
         return new Member.Builder()
                 .withFirstName(dto.getFirstName())
                 .withLastName(dto.getLastName())
                 .withAddress(addressMapper.toAddress(dto.getAddress()))
                 .withEmail(dto.getEmail())
                 .withLicensePlate(licensePlateMapper.toLicensePlate(dto.getLicensePlateDTO()))
-                .withTelephoneNumber()
+                .withTelephoneNumber(dto.getTelephoneNumber())
+                .withMembershipLevel(dto.getMembershipLevel())
+                .build();
     }
+
 }
