@@ -1,14 +1,17 @@
 package com.switchfully.parkshark.dto;
 
+import com.switchfully.parkshark.entity.Member;
+
 import java.time.LocalDate;
 
 public class CreateMemberDTO {
     private String firstName;
     private String lastName;
+    private CreateAddressDTO address;
     private String telephoneNumber;
     private String email;
-    private String licensePlateNumber;
-    private String licensePlateCountry;
+    private createLicensePlateDTO licensePlateDTO;
+    private Member.MembershipLevel membershipLevel;
     private LocalDate registrationDate;
 
     public CreateMemberDTO() {
@@ -27,39 +30,60 @@ public class CreateMemberDTO {
         return lastName;
     }
 
+
+    public String getTelephoneNumber() {
+        return telephoneNumber;
+    }
+
+
+
+    public String getEmail() {
+        return email;
+    }
+
+
+    public createLicensePlateDTO getLicensePlateDTO() {
+        return licensePlateDTO;
+    }
+
+
+    public LocalDate getRegistrationDate() {
+        return registrationDate;
+    }
+
+    public CreateAddressDTO getAddress() {
+        return address;
+    }
+
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
 
-    public String getTelephoneNumber() {
-        return telephoneNumber;
+    public void setAddress(CreateAddressDTO address) {
+        this.address = address;
     }
 
     public void setTelephoneNumber(String telephoneNumber) {
         this.telephoneNumber = telephoneNumber;
     }
 
-    public String getEmail() {
-        return email;
-    }
-
     public void setEmail(String email) {
         this.email = email;
     }
 
-    public String getLicensePlateNumber() {
-        return licensePlateNumber;
+    public void setLicensePlateDTO(createLicensePlateDTO licensePlateDTO) {
+        this.licensePlateDTO = licensePlateDTO;
     }
 
-    public void setLicensePlateNumber(String licensePlateNumber) {
-        this.licensePlateNumber = licensePlateNumber;
+    public void setRegistrationDate(LocalDate registrationDate) {
+        this.registrationDate = registrationDate;
     }
 
-    public String getLicensePlateCountry() {
-        return licensePlateCountry;
+    public Member.MembershipLevel getMembershipLevel() {
+        return membershipLevel;
     }
 
-    public void setLicensePlateCountry(String licensePlateCountry) {
-        this.licensePlateCountry = licensePlateCountry;
+    public void setMembershipLevel(Member.MembershipLevel membershipLevel) {
+        this.membershipLevel = membershipLevel;
     }
 }
