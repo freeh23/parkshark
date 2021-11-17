@@ -1,6 +1,7 @@
 package com.switchfully.parkshark.mapper;
 
 import com.switchfully.parkshark.dto.CreateMemberDTO;
+import com.switchfully.parkshark.dto.MemberDTO;
 import com.switchfully.parkshark.entity.Member;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -39,4 +40,14 @@ public class MemberMapper {
                 .build();
     }
 
+    public MemberDTO toDTO(Member member) {
+        return new MemberDTO.Builder()
+                .withFirstName(member.getFirstName())
+                .withLastName(member.getLastName())
+                .withId(member.getMemberId().toString())
+                .withEmail(member.getEmail())
+                .withlicensePlateNumber(member.getLicensePlate().getLicensePlateNumber())
+                .withTelephoneNumber(member.getTelephoneNumber())
+                .build();
+    }
 }

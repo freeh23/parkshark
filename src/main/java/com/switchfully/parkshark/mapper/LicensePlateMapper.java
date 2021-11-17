@@ -14,4 +14,5 @@ public class LicensePlateMapper {
                 .build();
 
     }
+
 }

@@ -7,10 +7,12 @@ import com.switchfully.parkshark.mapper.MemberMapper;
 import com.switchfully.parkshark.repository.MemberRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
 @Service
+@Transactional
 public class MemberService {
     private final MemberMapper mapper;
     private final MemberRepository repository;
@@ -25,7 +27,7 @@ public class MemberService {
     public MemberDTO createMember(CreateMemberDTO dto) {
         assertCorrectCreateMemberDTO(dto);
         var newMember = mapper.toMember(dto);
-        repository.saveMember(newMember);
+        repository.save(newMember);
         return mapper.toDTO(newMember);
     }
 
