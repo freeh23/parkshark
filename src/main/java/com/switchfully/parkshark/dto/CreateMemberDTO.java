@@ -10,7 +10,7 @@ public class CreateMemberDTO {
     private CreateAddressDTO address;
     private String telephoneNumber;
     private String email;
-    private createLicensePlateDTO licensePlateDTO;
+    private CreateLicensePlateDTO licensePlateDTO;
     private Member.MembershipLevel membershipLevel;
     private LocalDate registrationDate;
 
@@ -42,7 +42,7 @@ public class CreateMemberDTO {
     }
 
 
-    public createLicensePlateDTO getLicensePlateDTO() {
+    public CreateLicensePlateDTO getLicensePlateDTO() {
         return licensePlateDTO;
     }
 
@@ -71,7 +71,7 @@ public class CreateMemberDTO {
         this.email = email;
     }
 
-    public void setLicensePlateDTO(createLicensePlateDTO licensePlateDTO) {
+    public void setLicensePlateDTO(CreateLicensePlateDTO licensePlateDTO) {
         this.licensePlateDTO = licensePlateDTO;
     }
 
